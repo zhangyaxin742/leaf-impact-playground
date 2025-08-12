@@ -8,4 +8,6 @@ if (!document.documentElement.classList.contains('dark')) {
   if (!saved || saved === 'dark') document.documentElement.classList.add('dark');
 }
 
+console.log('Main.tsx loaded, theme:', document.documentElement.classList.toString());
+
 createRoot(document.getElementById("root")!).render(<App />);

@@ -111,14 +111,22 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  .bg-gradient-primary { background: var(--gradient-primary); }
+  .bg-gradient-primary { 
+    background: var(--gradient-primary, linear-gradient(135deg, #4ade80, #0891b2)); 
+  }
   .text-gradient-primary {
-    background: var(--gradient-primary);
+    background: var(--gradient-primary, linear-gradient(135deg, #4ade80, #0891b2));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
-  .shadow-glow { box-shadow: var(--shadow-glow); }
-  .elev-1 { box-shadow: var(--shadow-elev-1); }
-  .transition-smooth { transition: var(--transition-smooth); }
+  .shadow-glow { 
+    box-shadow: var(--shadow-glow, 0 0 40px rgba(74, 222, 128, 0.35)); 
+  }
+  .elev-1 { 
+    box-shadow: var(--shadow-elev-1, 0 8px 24px rgba(8, 145, 178, 0.25)); 
+  }
+  .transition-smooth { 
+    transition: var(--transition-smooth, all 0.25s cubic-bezier(0.4, 0, 0.2, 1)); 
+  }
 }

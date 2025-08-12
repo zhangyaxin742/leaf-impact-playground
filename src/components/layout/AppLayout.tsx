@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { MobileTabBar } from "@/components/navigation/MobileTabBar";
 
 export const AppLayout = ({ children }: { children: ReactNode }) => {
+  console.log('AppLayout rendered');
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-background/70 border-b border-white/10">

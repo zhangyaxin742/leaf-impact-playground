@@ -25,6 +25,8 @@ const Onboarding = () => {
   const [u18, setU18] = useState(false);
   const [form, setForm] = useState({ income: 2400, bills: 1800, weekly: 20, risk: 50, values: [] as string[], avoids: [] as string[] });
   const nav = useNavigate();
+  
+  console.log('Onboarding component rendered, step:', step, 'form:', form);
 
   const next = () => setStep((s) => s + 1);
   const prev = () => setStep((s) => Math.max(0, s - 1));

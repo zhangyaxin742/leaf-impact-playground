@@ -18,6 +18,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/test" lazy={() => import('./pages/SimpleTest').then(m=>({ Component: m.default }))} />
             <Route path="/onboarding" lazy={() => import('./pages/Onboarding').then(m=>({ Component: m.default }))} />
             <Route path="/dashboard" lazy={() => import('./pages/Dashboard').then(m=>({ Component: m.default }))} />
             <Route path="/budget" lazy={() => import('./pages/Budget').then(m=>({ Component: m.default }))} />
