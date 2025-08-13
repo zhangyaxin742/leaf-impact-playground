@@ -39,9 +39,6 @@ console.log("Onboarding render");
   };
 
   return (
-        <div style={{ minHeight: "100vh", padding: 24, color: "#fff", background: "transparent" }}>
-      <h1>ONBOARDING — smoke test</h1>
-      {/* 
     <AppLayout>
       <h1 className="font-display text-2xl mb-3 text-gradient-primary">Welcome to Leaf.io</h1>
       <p className="text-muted-foreground mb-4">Budget. Learn. Sim your impact.</p>
@@ -151,10 +148,7 @@ console.log("Onboarding render");
           </div>
         </Step>
       )}
-    </AppLayout>
-  );
-}; */} 
-</div>
+    </AppLayout> 
   ); 
 }
 
